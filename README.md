@@ -13,7 +13,9 @@ Biblioteka przygotowana jest do obsługi mikrokontrolera Atmel AVR XMEGA128A3U z
 * Dominik Bieczyński (Leon Instruments) - <https://extronic.pl>
 * Paweł 'felixd' Wojciechowski - <http://www.konopnickiej.com>
 
-## Edytor
-Program edytowany był i kompilowany za pomocą środowiska Microsoft Visual Studio Code oraz Platformio IO
-Kodowanie: UTF-8
-Znak końca linii: Unix LF
+## Narzędzia
+
+ * Edytor: [Visual Studio Code](https://code.visualstudio.com/) + [PlatformioIO](http://platformio.org/)
+ * Formatowanie kodu: **clang-format**
+ * Kodowanie: **UTF-8**
+ * Znak końca linii: **Unix LF**
