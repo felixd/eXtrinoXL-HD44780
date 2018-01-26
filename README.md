@@ -33,8 +33,8 @@ W celu poprawnego działania **IntelliSense** w **VSCode** upewnij się, że pli
 Więcej informacji pod linkiem: https://github.com/Microsoft/vscode-cpptools/issues/690
 
 ### avrdude, Platformio IO i FLIP (FLIP2)
-Plik [platformio.ini](platformio.ini) przygotowany został pod obsługę oprogramowania FLIP (ang. FLexible In-system Programmer) firmy Atmel wbudowanego w bootloader procesora XMEGA. Obsługiwany jest przez `avrdude` a uruchamiany poniszym poleceniem:
+Upload pliku HEX odbywa się za pomocą oprogramowania FLIP (ang. FLexible In-system Programmer) firmy Atmel wbudowanego w bootloader XMEGA128A3U. Obsługiwany jest przez `avrdude` a uruchamiany poniszym poleceniem:
 
-```pio run -t program```
+```./upload.sh```
 
 Patrz plik [upload.sh](upload.sh)

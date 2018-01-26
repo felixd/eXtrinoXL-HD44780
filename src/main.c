@@ -32,7 +32,6 @@ W naszym przypadku po uruchomieniu ekran wyglądać będzie następująco:
 
 int main(void)
 {
-
 	// Konfiguracja przycisku FLIP
 	PORTE.DIRCLR = PIN5_bm;				 // pin E5 jako wejście
 	PORTE.PIN5CTRL = PORT_OPC_PULLUP_gc; // podciągnięcie do zasilania
@@ -48,7 +47,7 @@ int main(void)
 	// Przejście do drugiej linii
 	Lcd2;
 	// Tworzenie drugiego wiersza
-	Lcd("Konopnickiej.Com");
+	Lcd("Konopnickiej Com");
 
 	// Deklarujemy zmienną służącą jako licznik
 	uint8_t licznik = 0;
