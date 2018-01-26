@@ -8,7 +8,22 @@
   Paweł 'felixd' Wojciechowski
   Outsourcing IT - Konopnickiej.Com
   http://www.konopnickiej.com
- */
+
+			16x2
+	 +----------------+
+LCD	 |1234567890123456|
+LCD2 |1234567890123456|
+	 +----------------+
+	    	16x2
+
+W naszym przypadku po uruchomieniu ekran wyglądać będzie następująco:
+
+		 +----------------+
+	LCD	 |CPU: 2000000 Hz |
+	LCD2 |Konopnickiej.Com|
+		 +----------------+
+		 
+*/
 
 #define F_CPU 2000000UL
 #include <avr/io.h>
@@ -18,20 +33,24 @@
 int main(void)
 {
 
-	// konfiguracja przycisku FLIP
+	// Konfiguracja przycisku FLIP
 	PORTE.DIRCLR = PIN5_bm;				 // pin E5 jako wejście
 	PORTE.PIN5CTRL = PORT_OPC_PULLUP_gc; // podciągnięcie do zasilania
 
-	// Inicjalizacja wyświetlacza
-	LcdInit(); // inicjalizacja sterownika LCD
-	// Lcd("   eXtrino XL   "); // wyświetlenie napisu
+	// Inicjalizacja sterownika LCD
+	LcdInit();
+
+	// Tworzenie pierwszego wiersza
 	Lcd("CPU: ");
 	LcdDec(F_CPU);
-	Lcd("Hz");
-	Lcd2;					 // przejście do drugiej linii
-	Lcd("Konopnickiej.Com"); // wyświetlenie napisu
+	Lcd(" Hz");
 
-	// zmienna służąca jako licznik
+	// Przejście do drugiej linii
+	Lcd2;
+	// Tworzenie drugiego wiersza
+	Lcd("Konopnickiej.Com");
+
+	// Deklarujemy zmienną służącą jako licznik
 	uint8_t licznik = 0;
 
 	while (1)
