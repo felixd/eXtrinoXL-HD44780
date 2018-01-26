@@ -19,3 +19,4 @@ Biblioteka przygotowana jest do obsługi mikrokontrolera Atmel AVR XMEGA128A3U z
  * Formatowanie kodu: **clang-format**
  * Kodowanie: **UTF-8**
  * Znak końca linii: **Unix LF**
+ 
