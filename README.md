@@ -22,7 +22,7 @@ Biblioteka przygotowana jest do obsługi mikrokontrolera Atmel AVR XMEGA128A3U z
 
  ## Uwagi do Platformio IO / VSCode
 
-W celu poprawnego działania **IntelliSense** w **VSCode** upewnij się że plik `.vscode/c_cpp_properties.json` w poniższej sekcji ma dokładnie tam określony rodzaj mikrokontrolera:
+W celu poprawnego działania **IntelliSense** w **VSCode** upewnij się, że plik `.vscode/c_cpp_properties.json`, w sekcji `defines` ma dokładnie tak samo określony rodzaj mikrokontrolera:
 
 ```
             "defines": [
