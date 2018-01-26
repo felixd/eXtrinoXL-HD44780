@@ -23,8 +23,11 @@ int main(void)
 	PORTE.PIN5CTRL = PORT_OPC_PULLUP_gc; // podciągnięcie do zasilania
 
 	// Inicjalizacja wyświetlacza
-	LcdInit();				 // inicjalizacja sterownika LCD
-	Lcd("   eXtrino XL   "); // wyświetlenie napisu
+	LcdInit(); // inicjalizacja sterownika LCD
+	// Lcd("   eXtrino XL   "); // wyświetlenie napisu
+	Lcd("CPU: ");
+	LcdDec(F_CPU);
+	Lcd("Hz");
 	Lcd2;					 // przejście do drugiej linii
 	Lcd("Konopnickiej.Com"); // wyświetlenie napisu
 
