@@ -8,4 +8,4 @@ pio run -t clean
 # Kompilowanie programu
 pio run
 # AVRDUDE firmware.hex upload
-avrdude -c flip2 -U application:w:.pioenvs/native_avr/firmware.hex:i -p x128a3u 
+avrdude -c flip2 -U application:w:.pioenvs/avr_xmega/firmware.hex:i -p x128a3u 
