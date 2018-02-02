@@ -22,19 +22,4 @@ Biblioteka przygotowana jest do obsługi mikrokontrolera Atmel AVR XMEGA128A3U z
 
  ## Uwagi do Platformio IO / VSCode
 
-### IntelliSense i <avr/io.h> a xmega128a3u
-W celu poprawnego działania **IntelliSense** w **VSCode** upewnij się, że plik `.vscode/c_cpp_properties.json` w sekcji `defines` ma dokładnie tak samo określony rodzaj mikrokontrolera:
-
-```
-            "defines": [
-                "__AVR_ATxmega128A3U__",
-```
-
-Więcej informacji pod linkiem: https://github.com/Microsoft/vscode-cpptools/issues/690
-
-### avrdude, Platformio IO i FLIP (FLIP2)
-Upload pliku HEX odbywa się za pomocą oprogramowania FLIP (ang. FLexible In-system Programmer) firmy Atmel wbudowanego w bootloader XMEGA128A3U. Obsługiwany jest przez `avrdude` a uruchamiany poniszym poleceniem:
-
-```./upload.sh```
-
-Patrz plik [upload.sh](upload.sh)
+ https://gitlab.com/extrinoxl/platformio-io - Czytamy README ;)
